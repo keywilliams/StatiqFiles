@@ -3,7 +3,9 @@
     "",
     "\\Teste",
     "\\Teste\\pt",
-    "\\TMC"
+    "\\TMC",
+    "\\TMC\\wwwroot",
+    "\\TMC\\wwwroot\\css"
   ],
   "PreviewInSolutionExplorer": false
 }
