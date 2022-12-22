@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>American Dad!</title>
+    <meta name="description" content="Stan Smith trabalha para a CIA e est&#xE1; sempre em alerta em rela&#xE7;&#xE3;o a atividades terroristas. Sua esposa, a ador&#xE1;vel Francine, sempre gostou de badala&#xE7;&#xE3;o, mas resolveu deixar as festas de lado em prol de seu marido conservador. No entanto, o amor tem limites e ela n&#xE3;o tem medo de colocar Stan em seu devido lugar. A filha mais velha do casal, Hayley, tem 18 anos. Ela &#xE9; uma garota super liberal e, por isso, est&#xE1; sempre em p&#xE9; de guerra com o pai. Hayley &#xE9; irm&#xE3; do azarado Steve, um garoto de 13 anos, fan&#xE1;tico por computadores e que parece estar a beira da puberdade. O cl&#xE3; dos Smith tamb&#xE9;m &#xE9; composto por seres nada convencionais. Um deles &#xE9; Roger, um sarc&#xE1;stico alien&#xED;gena que Stan resgatou da famosa &#xC1;rea 51. Este ser de outro planeta vive ressentido pelo fato de n&#xE3;o poder sair de casa. O outro integrante &#xE9; terr&#xE1;queo. Quer dizer, aqu&#xE1;tico. Trata-se de Klaus, um libidinoso peixe dourado que fala alem&#xE3;o. Ele &#xE9; resultado de uma experi&#xEA;ncia mal sucedida da CIA. A miss&#xE3;o desta fam&#xED;lia de personalidades t&#xE3;o diferentes &#xE9; continuar se amando num mundo cada vez mais estressante. E com Stan como chefe da fam&#xED;lia, o p&#xE1;reo n&#xE3;o ser&#xE1; f&#xE1;cil.">
+    <meta name="og:title" property="og:title" content="American Dad!">
+    <meta name="robots" content="American Dad!">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../wwwroot/css/bootstrap/bootstrap.min.css" />
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="../wwwroot/css/site.css" />
+</head>
+<body>
+    <div class="page">
+        <main>
+            <div class="navmenu">
+                
+<div class="navbar navbar-dark">
+    <div class="navbar__brand">
+        <a class="navbar__item" href="Index.html">
+            <img src="../wwwroot/img/brand/company-logo.png" />
+        </a>
+    </div>
+
+    <div class="navbar__menu">
+        <button type="button" class="navbar__menu-item hide-tablet" data-bs-toggle="modal" data-bs-target="#onYourFlightModal">
+            O que h&#xE1; no meu voo
+            <svg class="all fill-white" style="width: 31px; height: 31px">
+                <use xlink:href="../wwwroot/all.svg#icon-airplane"></use>
+            </svg>
+        </button>
+
+
+        <div class="navbar__menu-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        pt
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../en/American Dad!.html">en</a></li>
+                            <li><a class="dropdown-item" href="../es/American Dad!.html">es</a></li>
+                    </ul>
+        </div>
+
+
+        <button class="navbar__menu-item" onclick="window.location.href='FAQs.html';">
+            <svg class="all fill-white" style="width: 26px; height: 26px">
+                <use xlink:href="../wwwroot/all.svg#icon-help"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="onYourFlightModal" tabindex="-1" role="dialog" aria-labelledby="onYourFlightModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <button type="button" class="close modal-close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h5 class="modal-title mb-4" id="onYourFlightModalLabel">O que h&#xE1; no seu voo</h5>
+
+                <!-- modal tabs -->
+                <ul class="nav nav-tabs rounded-nav flex-column flex-sm-row text-center">
+                    <li class="nav-item flex-sm-fill">
+                        <a id="destination-tab" data-bs-toggle="tab" role="tab" class="nav-link active" aria-controls="destination" href="#destination" aria-selected="true">Destino</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="flightnumber-tab" data-bs-toggle="tab" role="tab" class="nav-link" aria-controls="flightnumber" href="#flightNumber" aria-selected="true">N&#xFA;mero do Voo</a>
+                    </li>
+                </ul>
+
+                    <!-- tabs content -->
+                    <div id="modalTabContent" class="tab-content">
+                        <div id="destination" role="tabpanel" aria-labelledby="destination-tab" class="py-4 show active tab-pane">
+                            <div class="modal-form my-4">
+                                <label>Data de Partida</label>
+                                <select class="form-select" aria-label="Default select example">
+                                            <option value="0">21/12/2022</option>
+                                </select>
+
+                                <label>De</label>
+                                <select class="form-select" aria-label="Default select example">
+                                            <option value="0">Lisbon</option>
+                                            <option value="1">Brazil</option>
+                                            <option value="2">Spain</option>
+                                            <option value="3">Germany</option>
+                                            <option value="4">France</option>
+                                            <option value="5">Ukraine</option>
+                                </select>
+
+                                <label>Para</label>
+                                <select class="form-select" aria-label="Default select example">
+                                            <option value="0">Brazil</option>
+                                            <option value="1">Lisbon</option>
+                                            <option value="2">Germany</option>
+                                            <option value="3">Spain</option>
+                                            <option value="4">Ukraine</option>
+                                            <option value="5">France</option>
+                                </select>
+
+                                <label>N&#xFA;mero do Voo</label>
+                                <select class="form-select" aria-label="Default select example">
+                                            <option value="0">01</option>
+                                            <option value="1">10</option>
+                                            <option value="2">02</option>
+                                            <option value="3">20</option>
+                                            <option value="4">03</option>
+                                            <option value="5">30</option>
+                                </select>
+                            </div>
+
+                            <div class="text-end">
+                                <a href="#"> Limpar tudo</a>
+                            </div>
+                        </div>
+
+                        <div id="flightNumber" role="tabpanel" aria-labelledby="flightnumber-tab " class="py-4 tab-pane">
+                            <div class="modal-form my-4">
+                                <label>N&#xFA;mero do Voo</label>
+                                <select class="form-select" aria-label="Default select example">
+                                            <option value="0">01</option>
+                                            <option value="1">10</option>
+                                            <option value="2">02</option>
+                                            <option value="3">20</option>
+                                            <option value="4">03</option>
+                                            <option value="5">30</option>
+                                </select>
+
+                                <label>Data de Partida</label>
+                                <select class="form-select" aria-label="Default select example">
+                                            <option value="0">21/12/2022</option>
+                                </select>
+                            </div>
+                            <div class="text-end">
+                                <a href="#"> Limpar tudo</a>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+
+            <article class="content p-0" style="min-height: 100vh;">
+                
+<div class="detail-header">
+    <div class="detail-header__banner position-relative">
+        <div class="detail-header__banner-overlay"></div>
+                <img src="../wwwroot/img/content/banner-placeholder.png" />
+    </div>
+
+    <div class="detail-header__info">
+        <div class="row align-items-end">
+            <div class="col-4 col-md-3 detail-header__info-poster">
+                <img src="https://image.tmdb.org/t/p/w500//1aklTBd36LFiFNroOSiherLvLdu.jpg" />
+            </div>
+            <div class="col-8 col-md-9 detail-header__info-text">
+                <div class="text-details">
+                            <p class="item-type mb-2">
+                                <svg class="all fill-primary">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                                TV
+                            </p>
+                    <h2>American Dad!</h2>
+                    <p class="item-category mb-2">testi, Comedy, Animation</p>
+                    <p class="m-0"><small>0h 0mins | 2005 | </small></p>
+                </div>
+                <div class="text-rating d-flex justify-content-between pt-4">
+                    <h5>0</h5>
+                    <a href="https://www.imdb.com/title/tt0397306" target="_blank">
+						<img src="../wwwroot/img/content/imdb.png" />
+					</a>
+                </div>
+            </div>
+
+            <div class="detail-header__info-btn">
+                <button type="button" class="btn btn-primary" onclick="window.open('', '_blank')">
+                    Trailer
+                    <svg class="all fill-white">
+                        <use xlink:href="../wwwroot/all.svg#icon-play"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="item-details">
+
+    <div class="item-details__info">
+        <div class="mb-4">
+            <h6>Vis&#xE3;o geral</h6>
+            <p>Stan Smith trabalha para a CIA e est&#xE1; sempre em alerta em rela&#xE7;&#xE3;o a atividades terroristas. Sua esposa, a ador&#xE1;vel Francine, sempre gostou de badala&#xE7;&#xE3;o, mas resolveu deixar as festas de lado em prol de seu marido conservador. No entanto, o amor tem limites e ela n&#xE3;o tem medo de colocar Stan em seu devido lugar. A filha mais velha do casal, Hayley, tem 18 anos. Ela &#xE9; uma garota super liberal e, por isso, est&#xE1; sempre em p&#xE9; de guerra com o pai. Hayley &#xE9; irm&#xE3; do azarado Steve, um garoto de 13 anos, fan&#xE1;tico por computadores e que parece estar a beira da puberdade. O cl&#xE3; dos Smith tamb&#xE9;m &#xE9; composto por seres nada convencionais. Um deles &#xE9; Roger, um sarc&#xE1;stico alien&#xED;gena que Stan resgatou da famosa &#xC1;rea 51. Este ser de outro planeta vive ressentido pelo fato de n&#xE3;o poder sair de casa. O outro integrante &#xE9; terr&#xE1;queo. Quer dizer, aqu&#xE1;tico. Trata-se de Klaus, um libidinoso peixe dourado que fala alem&#xE3;o. Ele &#xE9; resultado de uma experi&#xEA;ncia mal sucedida da CIA. A miss&#xE3;o desta fam&#xED;lia de personalidades t&#xE3;o diferentes &#xE9; continuar se amando num mundo cada vez mais estressante. E com Stan como chefe da fam&#xED;lia, o p&#xE1;reo n&#xE3;o ser&#xE1; f&#xE1;cil.</p>
+        </div>
+
+        <div class="mb-4">
+            <h6>Cr&#xE9;ditos</h6>
+            <div class="d-flex">
+                <div class="item-details__subtitle">
+                    <p>Diretor</p>
+                    <p>Elenco</p>
+                </div>
+                <div class="item-details__description">
+                    <p>Albert Calleros</p>
+                    <p>John DiMaggio, James Patrick Stuart, Patrick Bristow, Curtis Armstrong, Patrick Stewart, Jeff Fischer, Elizabeth Banks, Eddie Kaye Thomas, Chris Diamantopoulos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <h6>Informa&#xE7;&#xF5;es</h6>
+            <div class="d-flex">
+                <div class="item-details__subtitle">
+                    <p>Est&#xFA;dio</p>
+                    <p>G&#xEA;nero</p>
+                    <p>Lan&#xE7;ado</p>
+                    <p>Direitos autorais</p>
+                </div>
+                <div class="item-details__description">
+                    <p>100 Kwt Studio</p>
+                    <p>Comedy, Animation</p>
+                    <p>2005</p>
+                    <p>©</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="bg-dark py-5 my-5">
+    <div class="item-all__episodes">
+        <h6>Epis&#xF3;dios</h6>
+
+        <div class="detail-slider mt-3">
+
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div class="slider slider-for-all-episodes detail-slider__all-episodes">
+
+                        <div>
+                            <div class="episode-detail">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="https://via.placeholder.com/302x173?text=1">
+                                    </div>
+                                    <div class="col-8 pe-5">
+                                        <p class="episode-detail__title">How to Get Away with Murder, S3</p>
+                                        <p class="episode-detail__subtitle">EP1 - We’re Good People Now</p>
+                                        <p class="episode-detail__sinopse">With Wallace Mahoney’s murder unsolved and Frank’s whereabouts unknown, the Keating 5 struggle to move on with their lives as they enter into their second year of law school. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="episode-detail">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="https://via.placeholder.com/302x173?text=2">
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="episode-detail__title">How to Get Away with Murder, S3</p>
+                                        <p class="episode-detail__subtitle">EP1 - We’re Good People Now</p>
+                                        <p class="episode-detail__sinopse">With Wallace Mahoney’s murder unsolved and Frank’s whereabouts unknown, the Keating 5 struggle to move on with their lives as they enter into their second year of law school. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="episode-detail">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="https://via.placeholder.com/302x173?text=3">
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="episode-detail__title">How to Get Away with Murder, S3</p>
+                                        <p class="episode-detail__subtitle">EP1 - We’re Good People Now</p>
+                                        <p class="episode-detail__sinopse">With Wallace Mahoney’s murder unsolved and Frank’s whereabouts unknown, the Keating 5 struggle to move on with their lives as they enter into their second year of law school. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="episode-detail">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="https://via.placeholder.com/302x173?text=4">
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="episode-detail__title">How to Get Away with Murder, S3</p>
+                                        <p class="episode-detail__subtitle">EP1 - We’re Good People Now</p>
+                                        <p class="episode-detail__sinopse">With Wallace Mahoney’s murder unsolved and Frank’s whereabouts unknown, the Keating 5 struggle to move on with their lives as they enter into their second year of law school. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="episode-detail">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="https://via.placeholder.com/302x173?text=5">
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="episode-detail__title">How to Get Away with Murder, S3</p>
+                                        <p class="episode-detail__subtitle">EP1 - We’re Good People Now</p>
+                                        <p class="episode-detail__sinopse">With Wallace Mahoney’s murder unsolved and Frank’s whereabouts unknown, the Keating 5 struggle to move on with their lives as they enter into their second year of law school. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="episode-detail">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="https://via.placeholder.com/302x173?text=6">
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="episode-detail__title">How to Get Away with Murder, S3</p>
+                                        <p class="episode-detail__subtitle">EP1 - We’re Good People Now</p>
+                                        <p class="episode-detail__sinopse">With Wallace Mahoney’s murder unsolved and Frank’s whereabouts unknown, the Keating 5 struggle to move on with their lives as they enter into their second year of law school. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="episode-detail">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="https://via.placeholder.com/302x173?text=7">
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="episode-detail__title">How to Get Away with Murder, S3</p>
+                                        <p class="episode-detail__subtitle">EP1 - We’re Good People Now</p>
+                                        <p class="episode-detail__sinopse">With Wallace Mahoney’s murder unsolved and Frank’s whereabouts unknown, the Keating 5 struggle to move on with their lives as they enter into their second year of law school. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="episode-detail">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="https://via.placeholder.com/302x173?text=8">
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="episode-detail__title">How to Get Away with Murder, S3</p>
+                                        <p class="episode-detail__subtitle">EP1 - We’re Good People Now</p>
+                                        <p class="episode-detail__sinopse">With Wallace Mahoney’s murder unsolved and Frank’s whereabouts unknown, the Keating 5 struggle to move on with their lives as they enter into their second year of law school. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="slider slider-nav-all-episodes detail-slider__all-episodes">
+                        <div>
+                            <div class="episode-thumbnail">
+                                <img src="https://via.placeholder.com/136x78/ff0000?text=1">
+                                <div>
+                                    <p class="episode-thumbnail__title">EP1 - We’re Good People Now</p>
+                                    <p class="episode-thumbnail__info m-0">2016 | 44 mins</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="episode-thumbnail">
+                                <img src="https://via.placeholder.com/136x78/ff0000?text=2">
+                                <div>
+                                    <p class="episode-thumbnail__title">EP2 - We’re Good People Now now now now</p>
+                                    <p class="episode-thumbnail__info m-0">2016 | 44 mins</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="episode-thumbnail">
+
+                                <img src="https://via.placeholder.com/136x78/ff0000?text=3">
+                                <div>
+                                    <p class="episode-thumbnail__title">EP3 - We’re Good People Now</p>
+                                    <p class="episode-thumbnail__info m-0">2016 | 44 mins</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="episode-thumbnail">
+                                <img src="https://via.placeholder.com/136x78/ff0000?text=4">
+                                <div>
+                                    <p class="episode-thumbnail__title">EP4 - We’re Good People Now</p>
+                                    <p class="episode-thumbnail__info m-0">2016 | 44 mins</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="episode-thumbnail">
+                                <img src="https://via.placeholder.com/136x78/ff0000?text=5">
+                                <div>
+                                    <p class="episode-thumbnail__title">EP5 - We’re Good People Now</p>
+                                    <p class="episode-thumbnail__info m-0">2016 | 44 mins</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="episode-thumbnail">
+                                <img src="https://via.placeholder.com/136x78/ff0000?text=6">
+                                <div>
+                                    <p class="episode-thumbnail__title">olaola</p>
+                                    <p class="episode-thumbnail__info m-0">2016 | 44 mins</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="episode-thumbnail">
+                                <img src="https://via.placeholder.com/136x78/ff0000?text=7">
+                                <div>
+                                    <p class="episode-thumbnail__title">EP6 - We’re Good People Now</p>
+                                    <p class="episode-thumbnail__info m-0">2016 | 44 mins</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="episode-thumbnail">
+                                <img src="https://via.placeholder.com/136x78/ff0000?text=8">
+                                <div>
+                                    <p class="episode-thumbnail__title">EP7 - We’re Good People Now</p>
+                                    <p class="episode-thumbnail__info m-0">2016 | 44 mins</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<div class="item-details content-light mb-4">
+    <h6>Relacionado</h6>
+
+    <div class="row row-cols-lg-5 ">
+                <div class="col col-4">
+
+                    <a href="2 Broke Girls.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//iQmBh4rmOpL7HCADqBmwkB9chIT.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">2 Broke Girls: <span>Season 1</span></p>
+                    <p class="search-results__item-info"><span>2011</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="2 Broke Girls.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//iQmBh4rmOpL7HCADqBmwkB9chIT.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">2 Broke Girls: <span>Season 2</span></p>
+                    <p class="search-results__item-info"><span>2011</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="2 Broke Girls.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//iQmBh4rmOpL7HCADqBmwkB9chIT.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">2 Broke Girls: <span>Season 3</span></p>
+                    <p class="search-results__item-info"><span>2011</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="2 Broke Girls.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//iQmBh4rmOpL7HCADqBmwkB9chIT.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">2 Broke Girls: <span>Season 4</span></p>
+                    <p class="search-results__item-info"><span>2011</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="Modern Family.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">Modern Family: <span>Season 1</span></p>
+                    <p class="search-results__item-info"><span>0</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="Modern Family.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">Modern Family: <span>Season 5</span></p>
+                    <p class="search-results__item-info"><span>0</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="Modern Family.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">Modern Family: <span>Season 4</span></p>
+                    <p class="search-results__item-info"><span>0</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="Modern Family.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">Modern Family: <span>Season 2</span></p>
+                    <p class="search-results__item-info"><span>0</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="Modern Family.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">Modern Family: <span>Season 3</span></p>
+                    <p class="search-results__item-info"><span>0</span> | <span>0h 1mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="Modern Family.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">Modern Family: <span>Season 6</span></p>
+                    <p class="search-results__item-info"><span>0</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="Modern Family.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">Modern Family: <span>Season 7</span></p>
+                    <p class="search-results__item-info"><span>0</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="American Dad!.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//1aklTBd36LFiFNroOSiherLvLdu.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">American Dad!: <span>Season 1</span></p>
+                    <p class="search-results__item-info"><span>2005</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="American Dad!.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//1aklTBd36LFiFNroOSiherLvLdu.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">American Dad!: <span>Season 2</span></p>
+                    <p class="search-results__item-info"><span>2005</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="American Dad!.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//1aklTBd36LFiFNroOSiherLvLdu.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">American Dad!: <span>Season 3</span></p>
+                    <p class="search-results__item-info"><span>2005</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="American Dad!.html">
+                        <div class="search-results__item">
+                            <img src="https://image.tmdb.org/t/p/w500//1aklTBd36LFiFNroOSiherLvLdu.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">American Dad!: <span>Season 5</span></p>
+                    <p class="search-results__item-info"><span>2005</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="Family Guy.html">
+                        <div class="search-results__item">
+                            <img src="https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">Family Guy: <span>Season 1</span></p>
+                    <p class="search-results__item-info"><span>1999</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="Family Guy.html">
+                        <div class="search-results__item">
+                            <img src="https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">Family Guy: <span>Season 2</span></p>
+                    <p class="search-results__item-info"><span>1999</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="Family Guy.html">
+                        <div class="search-results__item">
+                            <img src="https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">Family Guy: <span>Season 3</span></p>
+                    <p class="search-results__item-info"><span>1999</span> | <span>0h 0mins</span></p>
+
+                </div>
+                <div class="col col-4">
+
+                    <a href="Family Guy.html">
+                        <div class="search-results__item">
+                            <img src="https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_.jpg" />
+                            <div class="search-results__item-type">
+                                <svg class="all fill-white">
+                                    <use xlink:href="../wwwroot/all.svg#icon-tv"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <p class="search-results__item-title mb-0 mt-3">Family Guy: <span>Season 4</span></p>
+                    <p class="search-results__item-info"><span>1999</span> | <span>0h 0mins</span></p>
+
+                </div>
+    </div>
+</div>
+
+<section class="item-all bg-dark py-5 my-5">
+    <div class="item-all__content">
+        <h6>Todas as S&#xE9;ries</h6>
+
+        <div class="detail-slider mt-3">
+            <div class="slider all-items detail-slider__all-items">
+                        <div>
+                            <a href="2 Broke Girls.html">
+                                <img src="https://image.tmdb.org/t/p/w500//iQmBh4rmOpL7HCADqBmwkB9chIT.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">2 Broke Girls: <span>Season 1</span></p>
+                            <p class="item-info"><small><span>2011</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="2 Broke Girls.html">
+                                <img src="https://image.tmdb.org/t/p/w500//iQmBh4rmOpL7HCADqBmwkB9chIT.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">2 Broke Girls: <span>Season 2</span></p>
+                            <p class="item-info"><small><span>2011</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="2 Broke Girls.html">
+                                <img src="https://image.tmdb.org/t/p/w500//iQmBh4rmOpL7HCADqBmwkB9chIT.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">2 Broke Girls: <span>Season 3</span></p>
+                            <p class="item-info"><small><span>2011</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="2 Broke Girls.html">
+                                <img src="https://image.tmdb.org/t/p/w500//iQmBh4rmOpL7HCADqBmwkB9chIT.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">2 Broke Girls: <span>Season 4</span></p>
+                            <p class="item-info"><small><span>2011</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Disney Magic Bake-Off.html">
+                                <img src="https://image.tmdb.org/t/p/w500//lfSTZbwldVE1c0UIld45ABBREnh.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Disney Magic Bake-Off: <span>Season 1</span></p>
+                            <p class="item-info"><small><span>2021</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Modern Family.html">
+                                <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Modern Family: <span>Season 1</span></p>
+                            <p class="item-info"><small><span>0</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Modern Family.html">
+                                <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Modern Family: <span>Season 5</span></p>
+                            <p class="item-info"><small><span>0</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Modern Family.html">
+                                <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Modern Family: <span>Season 4</span></p>
+                            <p class="item-info"><small><span>0</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Modern Family.html">
+                                <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Modern Family: <span>Season 2</span></p>
+                            <p class="item-info"><small><span>0</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Modern Family.html">
+                                <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Modern Family: <span>Season 3</span></p>
+                            <p class="item-info"><small><span>0</span> | <span>0h 1mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Modern Family.html">
+                                <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Modern Family: <span>Season 6</span></p>
+                            <p class="item-info"><small><span>0</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Modern Family.html">
+                                <img src="https://image.tmdb.org/t/p/w500//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Modern Family: <span>Season 7</span></p>
+                            <p class="item-info"><small><span>0</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Game of Thrones.html">
+                                <img src="https://image.tmdb.org/t/p/w500//u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Game of Thrones: <span>Season 1</span></p>
+                            <p class="item-info"><small><span>2011</span> | <span>0h 1mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="d the series.html">
+                                <img />
+                            </a>
+                            <p class="item-title mb-0 mt-2">d the series: <span>Season 1</span></p>
+                            <p class="item-info"><small><span>2017</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="H the Series.html">
+                                <img />
+                            </a>
+                            <p class="item-title mb-0 mt-2">H the Series: <span>Season 1</span></p>
+                            <p class="item-info"><small><span>2022</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="American Dad!.html">
+                                <img src="https://image.tmdb.org/t/p/w500//1aklTBd36LFiFNroOSiherLvLdu.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">American Dad!: <span>Season 1</span></p>
+                            <p class="item-info"><small><span>2005</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="American Dad!.html">
+                                <img src="https://image.tmdb.org/t/p/w500//1aklTBd36LFiFNroOSiherLvLdu.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">American Dad!: <span>Season 2</span></p>
+                            <p class="item-info"><small><span>2005</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="American Dad!.html">
+                                <img src="https://image.tmdb.org/t/p/w500//1aklTBd36LFiFNroOSiherLvLdu.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">American Dad!: <span>Season 3</span></p>
+                            <p class="item-info"><small><span>2005</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="American Dad!.html">
+                                <img src="https://image.tmdb.org/t/p/w500//1aklTBd36LFiFNroOSiherLvLdu.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">American Dad!: <span>Season 4</span></p>
+                            <p class="item-info"><small><span>2005</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="American Dad!.html">
+                                <img src="https://image.tmdb.org/t/p/w500//1aklTBd36LFiFNroOSiherLvLdu.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">American Dad!: <span>Season 5</span></p>
+                            <p class="item-info"><small><span>2005</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Family Guy.html">
+                                <img src="https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Family Guy: <span>Season 1</span></p>
+                            <p class="item-info"><small><span>1999</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Family Guy.html">
+                                <img src="https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Family Guy: <span>Season 2</span></p>
+                            <p class="item-info"><small><span>1999</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Family Guy.html">
+                                <img src="https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Family Guy: <span>Season 3</span></p>
+                            <p class="item-info"><small><span>1999</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Family Guy.html">
+                                <img src="https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Family Guy: <span>Season 4</span></p>
+                            <p class="item-info"><small><span>1999</span> | <span>0h 0mins</span></small></p>
+                        </div>
+            </div>
+        </div>
+    </div>
+</section>
+            </article>
+
+            <div class="footer">
+                
+<footer class="footer-desktop hide-mobile">
+    <div class="footer-desktop__top">
+        <div class="row">
+            <div class="col-12 col-md-6 footer-desktop__top-logo text-md-start text-center">
+				<a href="Index.html">
+                            <img src="../wwwroot/img/brand/company-logo.png" />
+				</a>
+            </div>
+            <div class="col-12 col-md-6 footer-desktop__top-social text-md-end text-center">
+                <a href="" target="_blank">
+                    <svg class="all fill-white me-3" style="width: 14px; height: 27px">
+                        <use xlink:href="../wwwroot/all.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a href="" target="_blank">
+                    <svg class="all fill-white me-3" style="width: 24px; height: 24px">
+                        <use xlink:href="../wwwroot/all.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a href="" target="_blank">
+                    <svg class="all fill-white" style="width: 27px; height: 22px">
+                        <use xlink:href="../wwwroot/all.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-desktop__separator"></div>
+
+    <div class="footer-desktop__bottom">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-bottom-footer" style="margin-bottom: 0px;">© 2022 Test WIG.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer-mobile mobile-only py-2">
+    <div class="row py-2">
+        <div class="col-4 text-center">
+            <button class="footer-mobile__menu-item active"onclick="window.location.href='Index.html';">
+                <div class="icon-bg">
+                    <svg class="all fill-primary">
+                        <use xlink:href="../wwwroot/all.svg#icon-home-mobile"></use>
+                    </svg>
+                </div>
+                <p>Home</p>
+            </button>
+        </div>
+        <div class="col-4 text-center">
+            <button class="footer-mobile__menu-item">
+                <div class="icon-bg">
+                    <svg class="all fill-primary">
+                        <use xlink:href="../wwwroot/all.svg#icon-flight-mobile"></use>
+                    </svg>
+                </div>
+                <p>Flight</p>
+            </button>
+        </div>
+        <div class="col-4 text-center">
+            <button class="footer-mobile__menu-item">
+                <div class="icon-bg">
+                    <svg class="all fill-primary">
+                        <use xlink:href="../wwwroot/all.svg#icon-search-mobile"></use>
+                    </svg>
+                </div>
+                <p>Search</p>
+            </button>
+        </div>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+
+    <!-- Site JS -->
+    <script src="../wwwroot/js/site.js" asp-append-version="true" defer></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Slick Slider -->
+    <script src="../wwwroot/js/slick.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+    
+</body>
+</html>

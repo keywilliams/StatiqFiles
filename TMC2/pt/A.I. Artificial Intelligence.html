@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.I. Artificial Intelligence</title>
+    <meta name="description">
+    <meta name="og:title" property="og:title" content="A.I. Artificial Intelligence">
+    <meta name="robots" content="A.I. Artificial Intelligence">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../wwwroot/css/bootstrap/bootstrap.min.css" />
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="../wwwroot/css/site.css" />
+</head>
+<body>
+    <div class="page">
+        <main>
+            <div class="navmenu">
+                
+<div class="navbar navbar-dark">
+    <div class="navbar__brand">
+        <a class="navbar__item" href="Index.html">
+            <img src="../wwwroot/img/brand/company-logo.png" />
+        </a>
+    </div>
+
+    <div class="navbar__menu">
+        <button type="button" class="navbar__menu-item hide-tablet" data-bs-toggle="modal" data-bs-target="#onYourFlightModal">
+            O que h&#xE1; no meu voo
+            <svg class="all fill-white" style="width: 31px; height: 31px">
+                <use xlink:href="../wwwroot/all.svg#icon-airplane"></use>
+            </svg>
+        </button>
+
+
+        <div class="navbar__menu-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        pt
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../en/A.I. Artificial Intelligence.html">en</a></li>
+                            <li><a class="dropdown-item" href="../es/A.I. Artificial Intelligence.html">es</a></li>
+                    </ul>
+        </div>
+
+
+        <button class="navbar__menu-item" onclick="window.location.href='FAQs.html';">
+            <svg class="all fill-white" style="width: 26px; height: 26px">
+                <use xlink:href="../wwwroot/all.svg#icon-help"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="onYourFlightModal" tabindex="-1" role="dialog" aria-labelledby="onYourFlightModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <button type="button" class="close modal-close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h5 class="modal-title mb-4" id="onYourFlightModalLabel">O que h&#xE1; no seu voo</h5>
+
+                <!-- modal tabs -->
+                <ul class="nav nav-tabs rounded-nav flex-column flex-sm-row text-center">
+                    <li class="nav-item flex-sm-fill">
+                        <a id="destination-tab" data-bs-toggle="tab" role="tab" class="nav-link active" aria-controls="destination" href="#destination" aria-selected="true">Destino</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="flightnumber-tab" data-bs-toggle="tab" role="tab" class="nav-link" aria-controls="flightnumber" href="#flightNumber" aria-selected="true">N&#xFA;mero do Voo</a>
+                    </li>
+                </ul>
+
+                    <!-- tabs content -->
+                    <div id="modalTabContent" class="tab-content">
+                        <div id="destination" role="tabpanel" aria-labelledby="destination-tab" class="py-4 show active tab-pane">
+                            <div class="modal-form my-4">
+                                <label>Data de Partida</label>
+                                <select class="form-select" aria-label="Default select example">
+                                            <option value="0">21/12/2022</option>
+                                </select>
+
+                                <label>De</label>
+                                <select class="form-select" aria-label="Default select example">
+                                            <option value="0">Lisbon</option>
+                                            <option value="1">Brazil</option>
+                                            <option value="2">Spain</option>
+                                            <option value="3">Germany</option>
+                                            <option value="4">France</option>
+                                            <option value="5">Ukraine</option>
+                                </select>
+
+                                <label>Para</label>
+                                <select class="form-select" aria-label="Default select example">
+                                            <option value="0">Brazil</option>
+                                            <option value="1">Lisbon</option>
+                                            <option value="2">Germany</option>
+                                            <option value="3">Spain</option>
+                                            <option value="4">Ukraine</option>
+                                            <option value="5">France</option>
+                                </select>
+
+                                <label>N&#xFA;mero do Voo</label>
+                                <select class="form-select" aria-label="Default select example">
+                                            <option value="0">01</option>
+                                            <option value="1">10</option>
+                                            <option value="2">02</option>
+                                            <option value="3">20</option>
+                                            <option value="4">03</option>
+                                            <option value="5">30</option>
+                                </select>
+                            </div>
+
+                            <div class="text-end">
+                                <a href="#"> Limpar tudo</a>
+                            </div>
+                        </div>
+
+                        <div id="flightNumber" role="tabpanel" aria-labelledby="flightnumber-tab " class="py-4 tab-pane">
+                            <div class="modal-form my-4">
+                                <label>N&#xFA;mero do Voo</label>
+                                <select class="form-select" aria-label="Default select example">
+                                            <option value="0">01</option>
+                                            <option value="1">10</option>
+                                            <option value="2">02</option>
+                                            <option value="3">20</option>
+                                            <option value="4">03</option>
+                                            <option value="5">30</option>
+                                </select>
+
+                                <label>Data de Partida</label>
+                                <select class="form-select" aria-label="Default select example">
+                                            <option value="0">21/12/2022</option>
+                                </select>
+                            </div>
+                            <div class="text-end">
+                                <a href="#"> Limpar tudo</a>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+
+            <article class="content p-0" style="min-height: 100vh;">
+                
+<div class="detail-header">
+    <div class="detail-header__banner position-relative">
+        <div class="detail-header__banner-overlay"></div>
+                <img src="../wwwroot/img/content/banner-placeholder.png" />
+    </div>
+
+    <div class="detail-header__info">
+        <div class="row align-items-end">
+            <div class="col-4 col-md-3 detail-header__info-poster">
+                <img src="https://image.tmdb.org/t/p/w500//wnUAcUrMRGPPZUDroLeZhSjLkuu.jpg" />
+            </div>
+            <div class="col-8 col-md-9 detail-header__info-text">
+                <div class="text-details">
+                            <p class="item-type mb-2">
+                                <svg class="all fill-primary">
+                                    <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                </svg>
+                                Filme
+                            </p>
+                    <h2>A.I. Artificial Intelligence</h2>
+                    <p class="item-category mb-2">Action, Drama, Adventure, Sci-Fi</p>
+                    <p class="m-0"><small>0h 2mins | 2001 | </small></p>
+                </div>
+                <div class="text-rating d-flex justify-content-between pt-4">
+                    <h5>7.2</h5>
+                    <a href="https://www.imdb.com/title/tt0212720" target="_blank">
+						<img src="../wwwroot/img/content/imdb.png" />
+					</a>
+                </div>
+            </div>
+
+            <div class="detail-header__info-btn">
+                <button type="button" class="btn btn-primary" onclick="window.open('', '_blank')">
+                    Trailer
+                    <svg class="all fill-white">
+                        <use xlink:href="../wwwroot/all.svg#icon-play"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="item-details">
+
+    <div class="item-details__info">
+        <div class="mb-4">
+            <h6>Vis&#xE3;o geral</h6>
+            <p></p>
+        </div>
+
+        <div class="mb-4">
+            <h6>Cr&#xE9;ditos</h6>
+            <div class="d-flex">
+                <div class="item-details__subtitle">
+                    <p>Diretor</p>
+                    <p>Elenco</p>
+                </div>
+                <div class="item-details__description">
+                    <p>Steven Spielberg</p>
+                    <p>Haley Joel Osment, Justina Machado, April Grace, Tim Rigby, Matt Winston, Robin Williams, Tim Rhoze, Enrico Colantoni, Kevin Sussman, Wayne Wilderson, William Hurt, Clark Gregg, Ben Kingsley, Brendan Gleeson, Lily Knight, Frances O&#x27;Connor, Jude Law, Jack Angel, Ashley Scott, Meryl Streep, Erik Bauersfeld, Ken Leung, Brian Turk, Keith Campbell, Laurence Mason, Matt Malloy, Chris Rock, Michael Mantell, Adrian Grenier, Sam Robards, Miguel P&#xE9;rez, Billy Scudder, Bobby Harwell, R. David Smith, Eliza Coleman, Jim Jansen, Clara Bellar, Kelly McCool, Michael Shamus Wiles, Mark Allan Staubach, Jason Sutter, Alan Scott, Daveigh Chase, Kathryn Morris, Hunter King, Michael Berresse, Paula Malcomson, John Prosky, Curt Youngberg, Andy Morrow, Dillon McEwin, Ken Palmer, Jeanine Salla, Laia Salla, Kate Nei, Jake Thomas, Tom Gallop, Eugene Osment, Sabrina Grdevich, Theo Greenly, Christopher Dye, Brent Sexton, Michael Fishman, Diane Fletcher, Al Jourgensen, Paul Barker, Vito Carenzo, Adam Grossman, Rena Owen, Adam Alexi-Malle, Ty Coon, Duane Buford, Max Brody, Red King, Claude Gilbert, Jeremy James Kissner</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <h6>Informa&#xE7;&#xF5;es</h6>
+            <div class="d-flex">
+                <div class="item-details__subtitle">
+                    <p>Est&#xFA;dio</p>
+                    <p>G&#xEA;nero</p>
+                    <p>Lan&#xE7;ado</p>
+                    <p>Direitos autorais</p>
+                </div>
+                <div class="item-details__description">
+                    <p>100 Kwt Studio</p>
+                    <p>Drama, Adventure, Sci-Fi</p>
+                    <p>2001</p>
+                    <p>©</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <h6>Relacionado</h6>
+
+        <div class="row row-cols-lg-5 ">
+                    <div class="col col-4">
+
+                        <a href="10 Cloverfield Lane: The movie.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//84Dhwz93vCin6T1PX6ctSvWEuNE.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">10 Cloverfield Lane: The movie<span></span></p>
+                        <p class="search-results__item-info"><span>2016</span> | <span>0h 1mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="12 Strong.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//j18021qCeRi3yUBtqd2UFj1c0RQ.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">12 Strong<span></span></p>
+                        <p class="search-results__item-info"><span>2018</span> | <span>0h 0mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="Joker.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">Joker<span></span></p>
+                        <p class="search-results__item-info"><span>2019</span> | <span>0h 2mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="Batman Begins.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//1P3ZyEq02wcTMd3iE4ebtLvncvH.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">Batman Begins<span></span></p>
+                        <p class="search-results__item-info"><span>2005</span> | <span>0h 2mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="The Illusionist.html">
+                            <div class="search-results__item">
+                                <img src="https://m.media-amazon.com/images/M/MV5BY2VkMzZlZDAtNTkzNS00MDIzLWFmOTctMWQwZjQ1OWJiYzQ1XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">The Illusionist<span></span></p>
+                        <p class="search-results__item-info"><span>2006</span> | <span>0h 2mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="1492: Conquest of Paradise.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//3effmbI6BbGW9i0HzEDfVGuOsvz.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">1492: Conquest of Paradise<span></span></p>
+                        <p class="search-results__item-info"><span>1992</span> | <span>0h 2mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="300: Rise of an Empire.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//7lqsbSbSJVU5jYVso1j3lvC9Ehu.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">300: Rise of an Empire<span></span></p>
+                        <p class="search-results__item-info"><span>2014</span> | <span>0h 1mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="2001: A Space Odyssey.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//zmmYdPa8Lxx999Af9vnVP4XQ1V6.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">2001: A Space Odyssey<span></span></p>
+                        <p class="search-results__item-info"><span>1968</span> | <span>0h 2mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="A Beautiful Day in the Neighborhood.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//p9vCAVhDK375XyobVcKqzqzsUHE.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">A Beautiful Day in the Neighborhood<span></span></p>
+                        <p class="search-results__item-info"><span>2019</span> | <span>0h 1mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="A Bridge Too Far.html">
+                            <div class="search-results__item">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMTczNjg0MzQyM15BMl5BanBnXkFtZTcwMjY0NjAzNA@@._V1_.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">A Bridge Too Far<span></span></p>
+                        <p class="search-results__item-info"><span>1977</span> | <span>0h 0mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="A Fantastic Woman.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//x2yNruMR8bAJOIQ3wd7HR9qWjW3.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">A Fantastic Woman<span></span></p>
+                        <p class="search-results__item-info"><span>2017</span> | <span>0h 1mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="A Star Is Born.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">A Star Is Born<span></span></p>
+                        <p class="search-results__item-info"><span>2018</span> | <span>0h 2mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="Abominable.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//20djTLqppfBx5WYA67Y300S6aPD.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">Abominable<span></span></p>
+                        <p class="search-results__item-info"><span>2019</span> | <span>0h 1mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="About Schmidt.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//nKEis61uy7mElDVC6g00FTDvHxp.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">About Schmidt<span></span></p>
+                        <p class="search-results__item-info"><span>2002</span> | <span>0h 2mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="All Eyez on Me.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//zmgsaKFWbmZ1Grz4SO0PLNxilv3.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">All Eyez on Me<span></span></p>
+                        <p class="search-results__item-info"><span>2017</span> | <span>0h 2mins</span></p>
+
+                    </div>
+                    <div class="col col-4">
+
+                        <a href="American Beauty.html">
+                            <div class="search-results__item">
+                                <img src="https://image.tmdb.org/t/p/w500//wby9315QzVKdW9BonAefg8jGTTb.jpg" />
+                                <div class="search-results__item-type">
+                                    <svg class="all fill-white">
+                                        <use xlink:href="../wwwroot/all.svg#icon-movie"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <p class="search-results__item-title mb-0 mt-3">American Beauty<span></span></p>
+                        <p class="search-results__item-info"><span>1999</span> | <span>0h 2mins</span></p>
+
+                    </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="item-all bg-dark py-5 my-5">
+    <div class="item-all__content">
+        <h6>Todos os filmes</h6>
+
+        <div class="detail-slider mt-3">
+            <div class="slider all-items detail-slider__all-items">
+                        <div>
+                            <a href="D the Movie.html">
+                                <img src="https://tmcstoragestgf731d77.blob.core.windows.net/media-content-8465b1e6-2688-4dbc-4afb-08d9a50d1f3b/D the Movie mooncake.png" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">D the Movie</p>
+                            <p class="item-info"><small><span>2022</span> | <span>9722h 13mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="10 Cloverfield Lane: The movie.html">
+                                <img src="https://image.tmdb.org/t/p/w500//84Dhwz93vCin6T1PX6ctSvWEuNE.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">10 Cloverfield Lane: The movie</p>
+                            <p class="item-info"><small><span>2016</span> | <span>0h 1mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="10 Days in Sun City.html">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNjdlYzlkNmEtMzM3Mi00MzFhLTllOGItZjY4MTk5MWEyNjk0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">10 Days in Sun City</p>
+                            <p class="item-info"><small><span>2017</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="12 Strong.html">
+                                <img src="https://image.tmdb.org/t/p/w500//j18021qCeRi3yUBtqd2UFj1c0RQ.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">12 Strong</p>
+                            <p class="item-info"><small><span>2018</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Joker.html">
+                                <img src="https://image.tmdb.org/t/p/w500//udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Joker</p>
+                            <p class="item-info"><small><span>2019</span> | <span>0h 2mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Batman Begins.html">
+                                <img src="https://image.tmdb.org/t/p/w500//1P3ZyEq02wcTMd3iE4ebtLvncvH.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Batman Begins</p>
+                            <p class="item-info"><small><span>2005</span> | <span>0h 2mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="The Illusionist.html">
+                                <img src="https://m.media-amazon.com/images/M/MV5BY2VkMzZlZDAtNTkzNS00MDIzLWFmOTctMWQwZjQ1OWJiYzQ1XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">The Illusionist</p>
+                            <p class="item-info"><small><span>2006</span> | <span>0h 2mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="R the Movie      eqweqweqweqweqweqweqwe.html">
+                                <img src="https://tmcstoragestgf731d77.blob.core.windows.net/media-content-c3b99171-5c10-436b-a064-08da7176c310/69237803_1378445218981798_4500042466736472064_n.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">R the Movie      eqweqweqweqweqweqweqwe</p>
+                            <p class="item-info"><small><span>0</span> | <span>0h 3mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="17 Again.html">
+                                <img src="https://image.tmdb.org/t/p/w500//yEcfFXEWpuXcfsR9nKESVCFneqV.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">17 Again</p>
+                            <p class="item-info"><small><span>2009</span> | <span>0h 1mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="101 Dalmatians.html">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMGI2NTQ2N2EtNDExMS00OWM2LTkzZWItZGUzY2M2MDFjODk0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">101 Dalmatians</p>
+                            <p class="item-info"><small><span>1996</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="1492: Conquest of Paradise.html">
+                                <img src="https://image.tmdb.org/t/p/w500//3effmbI6BbGW9i0HzEDfVGuOsvz.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">1492: Conquest of Paradise</p>
+                            <p class="item-info"><small><span>1992</span> | <span>0h 2mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="300: Rise of an Empire.html">
+                                <img src="https://image.tmdb.org/t/p/w500//7lqsbSbSJVU5jYVso1j3lvC9Ehu.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">300: Rise of an Empire</p>
+                            <p class="item-info"><small><span>2014</span> | <span>0h 1mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="2001: A Space Odyssey.html">
+                                <img src="https://image.tmdb.org/t/p/w500//zmmYdPa8Lxx999Af9vnVP4XQ1V6.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">2001: A Space Odyssey</p>
+                            <p class="item-info"><small><span>1968</span> | <span>0h 2mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="A Beautiful Day in the Neighborhood.html">
+                                <img src="https://image.tmdb.org/t/p/w500//p9vCAVhDK375XyobVcKqzqzsUHE.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">A Beautiful Day in the Neighborhood</p>
+                            <p class="item-info"><small><span>2019</span> | <span>0h 1mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="A Bridge Too Far.html">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMTczNjg0MzQyM15BMl5BanBnXkFtZTcwMjY0NjAzNA@@._V1_.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">A Bridge Too Far</p>
+                            <p class="item-info"><small><span>1977</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="A Clockwork Orange.html">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMTY3MjM1Mzc4N15BMl5BanBnXkFtZTgwODM0NzAxMDE@._V1_.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">A Clockwork Orange</p>
+                            <p class="item-info"><small><span>1971</span> | <span>0h 0mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="A Fantastic Woman.html">
+                                <img src="https://image.tmdb.org/t/p/w500//x2yNruMR8bAJOIQ3wd7HR9qWjW3.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">A Fantastic Woman</p>
+                            <p class="item-info"><small><span>2017</span> | <span>0h 1mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="A Nightmare on Elm Street.html">
+                                <img src="https://image.tmdb.org/t/p/w500//wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">A Nightmare on Elm Street</p>
+                            <p class="item-info"><small><span>1984</span> | <span>0h 1mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="A Star Is Born.html">
+                                <img src="https://image.tmdb.org/t/p/w500//wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">A Star Is Born</p>
+                            <p class="item-info"><small><span>2018</span> | <span>0h 2mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Abominable.html">
+                                <img src="https://image.tmdb.org/t/p/w500//20djTLqppfBx5WYA67Y300S6aPD.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Abominable</p>
+                            <p class="item-info"><small><span>2019</span> | <span>0h 1mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="About Schmidt.html">
+                                <img src="https://image.tmdb.org/t/p/w500//nKEis61uy7mElDVC6g00FTDvHxp.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">About Schmidt</p>
+                            <p class="item-info"><small><span>2002</span> | <span>0h 2mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="A.I. Artificial Intelligence.html">
+                                <img src="https://image.tmdb.org/t/p/w500//wnUAcUrMRGPPZUDroLeZhSjLkuu.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">A.I. Artificial Intelligence</p>
+                            <p class="item-info"><small><span>2001</span> | <span>0h 2mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="All Eyez on Me.html">
+                                <img src="https://image.tmdb.org/t/p/w500//zmgsaKFWbmZ1Grz4SO0PLNxilv3.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">All Eyez on Me</p>
+                            <p class="item-info"><small><span>2017</span> | <span>0h 2mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Along Came a Spider.html">
+                                <img src="https://image.tmdb.org/t/p/w500//1YtsND7vSNymylnOSzgg3DdVFMB.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Along Came a Spider</p>
+                            <p class="item-info"><small><span>2001</span> | <span>0h 1mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="Am&#xE9;lie.html">
+                                <img src="https://image.tmdb.org/t/p/w500//slVnvaH6fpF22154vnjQJdXCVZd.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">Am&#xE9;lie</p>
+                            <p class="item-info"><small><span>2001</span> | <span>0h 2mins</span></small></p>
+                        </div>
+                        <div>
+                            <a href="American Beauty.html">
+                                <img src="https://image.tmdb.org/t/p/w500//wby9315QzVKdW9BonAefg8jGTTb.jpg" />
+                            </a>
+                            <p class="item-title mb-0 mt-2">American Beauty</p>
+                            <p class="item-info"><small><span>1999</span> | <span>0h 2mins</span></small></p>
+                        </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+            </article>
+
+            <div class="footer">
+                
+<footer class="footer-desktop hide-mobile">
+    <div class="footer-desktop__top">
+        <div class="row">
+            <div class="col-12 col-md-6 footer-desktop__top-logo text-md-start text-center">
+				<a href="Index.html">
+                            <img src="../wwwroot/img/brand/company-logo.png" />
+				</a>
+            </div>
+            <div class="col-12 col-md-6 footer-desktop__top-social text-md-end text-center">
+                <a href="" target="_blank">
+                    <svg class="all fill-white me-3" style="width: 14px; height: 27px">
+                        <use xlink:href="../wwwroot/all.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a href="" target="_blank">
+                    <svg class="all fill-white me-3" style="width: 24px; height: 24px">
+                        <use xlink:href="../wwwroot/all.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a href="" target="_blank">
+                    <svg class="all fill-white" style="width: 27px; height: 22px">
+                        <use xlink:href="../wwwroot/all.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-desktop__separator"></div>
+
+    <div class="footer-desktop__bottom">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-bottom-footer" style="margin-bottom: 0px;">© 2022 Test WIG.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer-mobile mobile-only py-2">
+    <div class="row py-2">
+        <div class="col-4 text-center">
+            <button class="footer-mobile__menu-item active"onclick="window.location.href='Index.html';">
+                <div class="icon-bg">
+                    <svg class="all fill-primary">
+                        <use xlink:href="../wwwroot/all.svg#icon-home-mobile"></use>
+                    </svg>
+                </div>
+                <p>Home</p>
+            </button>
+        </div>
+        <div class="col-4 text-center">
+            <button class="footer-mobile__menu-item">
+                <div class="icon-bg">
+                    <svg class="all fill-primary">
+                        <use xlink:href="../wwwroot/all.svg#icon-flight-mobile"></use>
+                    </svg>
+                </div>
+                <p>Flight</p>
+            </button>
+        </div>
+        <div class="col-4 text-center">
+            <button class="footer-mobile__menu-item">
+                <div class="icon-bg">
+                    <svg class="all fill-primary">
+                        <use xlink:href="../wwwroot/all.svg#icon-search-mobile"></use>
+                    </svg>
+                </div>
+                <p>Search</p>
+            </button>
+        </div>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+
+    <!-- Site JS -->
+    <script src="../wwwroot/js/site.js" asp-append-version="true" defer></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Slick Slider -->
+    <script src="../wwwroot/js/slick.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+    
+</body>
+</html>
